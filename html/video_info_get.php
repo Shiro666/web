@@ -1,0 +1,37 @@
+<?php
+//$userInfo = $_POST;
+//VIDEO.html调用video_info_get.php模块，根据页数决定传递哪些视频信息
+//$num=(int)$_POST['page_number'];//根据number决定从数据库中查找哪些帖子信息，因为要翻页，number相当于页数，一页十个，下面构造一个数组
+//$arr=array (array('poster_address'=>'/web/video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'1'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'2'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'3'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'4'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'5'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'6'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'7'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'8'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'9'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'10'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'11'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'12'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'13'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'14'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'15'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'16'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'17'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'18'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'19'),array('poster_address'=>' video_poster_temp/1.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]安徽一医院涉嫌骗保事件 多名相关责任人员被问责','UTF-8','GB2312'),'video_id'=>'20'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'21'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'22'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'23'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'24'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'25'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'26'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'27'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'28'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'29'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'30'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'31'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'32'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'33'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'34'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'35'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'36'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'37'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'38'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'39'),array('poster_address'=>' video_poster_temp/2.jpg','time'=>'4:50','title'=>mb_convert_encoding('[24小时]广西警方破获特大传销案 谎称开发北部湾 发展下线骗钱财','UTF-8','GB2312'),'video_id'=>'40'));
+//$a=array_slice($arr,($num-1)*20,20);
+//echo json_encode($a);
+
+include("connectDB.php");
+
+	$db=connectDB();
+    $userInfo = $_POST;	
+	
+	$num=(int)$_POST['page_number'];
+	
+	$firstone=($num*20)-20;
+			
+    $sql="SELECT poster_address,time,title,video_id FROM video limit $firstone,20";
+	
+	$i=0;
+	$result=$db->query($sql);	
+	if($result->num_rows>0){
+    	while($row=$result->fetch_assoc()){    		
+			
+			$output[$i]["poster_address"]="/web".$row["poster_address"];
+    		$output[$i]["time"]=$row["time"];
+			$output[$i]["title"]=mb_substr($row["title"],0,35,"UTF8")."...";
+			
+			$output[$i]["video_id"]=$row["video_id"];
+					
+			$i++;   		
+    	}
+    }
+	echo json_encode($output);
+	
+
+?>

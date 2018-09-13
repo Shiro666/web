@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论坛-诈骗信息发布网站</title>
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="stylesheet" href="css/text.min.css" />
+    <link rel="stylesheet" href="css/960_16_col.min.css" />
+    <link rel="stylesheet" href="css/color.min.css" />
+    <link rel="stylesheet" href="css/layout.min.css" />
+    <link rel="stylesheet" href="css/typography.min.css" />
+
+
+</head>
+<body>
+<div class="container_16 clearfix lo">
+    <div class="grid_16 login_register">
+        <span id="Aprf1"></span>
+        <span id="Aprf2"><a id="login_button" onclick="showDialog()" href="javascript:;">[登录]</a><a href="REGISTER.html">&nbsp;&nbsp;&nbsp;&nbsp;[注册]</a> </span>
+    </div>
+    <div id="header" class="grid_16">
+        <img src="images/banner.jpg">
+        <div id="nav">
+            <ul>
+                <li class="nav_content"><a href="HOME.html">&nbsp;&nbsp;&nbsp;&nbsp;首页</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=1">支付宝诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=2">商业诈骗</a> </li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=3">手机银行诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=4">网络诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=5">网购诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=6">社会诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=7">电信诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=8">微信诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="BBS.html?post_type=0">网页论坛</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="VIDEO.html">视频天地</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="SEARCH.html">检索</a></li>
+                <li class="mid">|</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid_16 title borderstyle">
+            <div class="title_left">评论：<em id="comments"></em></div>
+            <span class="tz_title" id="title"></span>
+    </div>
+    <div class="grid_16 tianchong"></div>
+    <div class="grid_16 table_box ">
+        <table class="big_table" id="big_table">
+
+        </table>
+    </div>
+    <div class="grid_16 tianchong"></div>
+    <div class="grid_16 borderstyle" style="margin-top: 0;">
+    <div class="grid_3 add"></div>
+    <div class="hfbox grid_13 " style="width: 740px;margin-top: 0;">
+            <div id="abc">
+            </div>
+            <div class="hfbtnbox">
+                <input type="button" class="form_submit_btn" value="回  复" id="btn1"/>
+            </div>
+    </div>
+    </div>
+
+
+
+    <div class="grid_16" id="botton">
+        地址：广州市番禺区广州大学城 邮编：510006
+        <br>
+        版权所有：诈骗信息发布网站 &copy;CopyRight:www.fraudinfopublishingwebsite.com
+    </div>
+</div>
+<div class="ui-mask" id="mask" onselectstart="return false"></div>
+<div class="ui-dialog" id="dialogMove" onselectstart='return false;'>
+    <div class="ui-dialog-title" id="dialogDrag"  onselectstart="return false;" >
+
+        登录通行证
+
+        <a id="ui-dialog-closebutton" class="ui-dialog-closebutton" onclick="hideDialog()" href="javascript:;"></a>
+
+    </div>
+    <div class="ui-dialog-content">
+        <div class="ui-dialog-l40 ui-dialog-pt15">
+            <input id="username" class="ui-dialog-input ui-dialog-input-username" type="input" placeholder="手机/邮箱" value="" />
+        </div>
+        <div class="ui-dialog-l40 ui-dialog-pt15">
+            <input id="password" class="ui-dialog-input ui-dialog-input-password" type="password" placeholder="密码" value="" />
+        </div>
+        <div class="ui-dialog-l40">
+            <span id="warn">用户名或密码错误!</span><a href="PASSWORD.html" class="wjmm">忘记密码?</a>
+        </div>
+        <div>
+            <a id="ui-dialog-submit" class="ui-dialog-submit" href="javascript:;" >登录</a>
+        </div>
+        <div class="ui-dialog-l40">
+            <a href="REGISTER.html" class="ljzc">立即注册</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="scripts/wangEditor.js"></script>
+<script type="text/javascript" src="scripts/vision1.0.min.js"></script>
+<script type="text/javascript" src="scripts/script1942.min.js"></script>
+
+</body>
+</html>

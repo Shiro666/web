@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-诈骗信息发布网站</title>
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="stylesheet" href="css/text.min.css" />
+    <link rel="stylesheet" href="css/960_16_col.min.css" />
+    <link rel="stylesheet" href="css/color.min.css" />
+    <link rel="stylesheet" href="css/layout.min.css" />
+    <link rel="stylesheet" href="css/typography.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body>
+<div class="container_16 clearfix lo">
+    <div class="grid_16 login_register">
+        <span id="Aprf1"></span>
+        <span id="Aprf2"><a id="login_button" onclick="showDialog()" href="javascript:;">[登录]</a><a href="REGISTER.html">&nbsp;&nbsp;&nbsp;&nbsp;[注册]</a> </span>
+    </div>
+    <div id="header" class="grid_16">
+        <img src="images/banner.jpg">
+        <div id="nav">
+            <ul>
+                <li class="nav_content"><a href="HOME.html">&nbsp;&nbsp;&nbsp;&nbsp;首页</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=1">支付宝诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=2">商业诈骗</a> </li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=3">手机银行诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=4">网络诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=5">网购诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=6">社会诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=7">电信诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="ANLI_LIST.html?case_type=8">微信诈骗</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="BBS.html?post_type=0">网页论坛</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="VIDEO.html">视频天地</a></li>
+                <li class="mid">|</li>
+                <li class="nav_content"><a href="SEARCH.html">检索</a></li>
+                <li class="mid">|</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid_16 reg">
+        <form action="https://www.baidu.com/" method="get">
+            <fieldset>
+                <table class="reg_table">
+                    <tbody>
+                    <tr>
+                        <td class="reg_label">
+                            <label>用户名：</label>
+                        </td>
+                        <td class="reg_con">
+                            <input id="reg_input1" class="reg_input">
+                            <span id="biaoji1" class="biaoji">*</span>
+                            <span id="errshuoming1" class="errshuoming"></span>
+                            <span id="shuoming1" class="shuoming">3~18个字符，有效字符包括中文字符、字母、数字及下划线</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>手机号：</label>
+                        </td>
+                        <td class="reg_con">
+                            <input id="reg_input2" class="reg_input">
+                            <span id="biaoji2" class="biaoji">*</span>
+                            <span id="errshuoming2" class="errshuoming"></span>
+                            <span id="shuoming2" class="shuoming">格式：00000000000</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>邮箱：</label>
+                        </td>
+                        <td  class="reg_con">
+                            <input id="reg_input3" class="reg_input">
+                            <span id="biaoji3" class="biaoji">*</span>
+                            <span id="errshuoming3" class="errshuoming"></span>
+                            <span id="shuoming3" class="shuoming">格式：guangjia@mail.com</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>性别：</label>
+                        </td>
+                        <td class="reg_con">
+                            <input name="sex" type="radio" value="男" checked="checked"/>男
+                            <input name="sex" type="radio" value="女" />女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>职业：</label>
+                        </td>
+                        <td class="reg_con">
+                            <select name="select1">
+                                <option>------------请选择------------</option>
+                                <option value="学生">学生</option>
+                                <option value="工人">工人</option>
+                                <option value="医生">医生</option>
+                                <option value="会计">会计</option>
+                                <option value="服务员">服务员</option>
+                                <option value="教师">教师</option>
+                                <option value="商人">商人</option>
+                                <option value="工程师">工程师</option>
+                                <option value="其它">其它</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>密保问题：</label>
+                        </td>
+                        <td class="reg_con">
+                            <select name="select2">
+                                <option>------------请选择------------</option>
+                                <option value="你的年龄是多少">你的年龄是多少</option>
+                                <option value="你的生日是什么时候">你的生日是什么时候</option>
+                                <option value="你的高中学校名称是什么">你的高中学校名称是什么</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>答案：</label>
+                        </td>
+                        <td class="reg_con">
+                            <input id="reg_input6" class="reg_input">
+                            <span id="errshuoming6" class="errshuoming"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>密码：</label>
+                        </td>
+                        <td  class="reg_con">
+                            <input id="reg_input4" class="reg_input" type="password">
+                            <span id="biaoji4" class="biaoji">*</span>
+                            <span id="errshuoming4" class="errshuoming"></span>
+                            <span id="shuoming4" class="shuoming">6~16位数字或英文</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_label">
+                            <label>确认密码：</label>
+                        </td>
+                        <td  class="reg_con">
+                            <input id="reg_input5" class="reg_input" type="password">
+                            <span id="biaoji5" class="biaoji"></span>
+                            <span id="errshuoming5" class="errshuoming"></span>
+                            <span id="shuoming5" class="shuoming"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <input type="button" id="reg_submit" class="reg_submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="grid_16" id="botton">
+        地址：广州市番禺区广州大学城 邮编：510006
+        <br>
+        版权所有：诈骗信息发布网站 &copy;CopyRight:www.fraudinfopublishingwebsite.com
+    </div>
+</div>
+<div class="ui-mask" id="mask" onselectstart="return false"></div>
+<div class="ui-dialog" id="dialogMove" onselectstart='return false;'>
+    <div class="ui-dialog-title" id="dialogDrag"  onselectstart="return false;" >
+
+        登录通行证
+
+        <a id="ui-dialog-closebutton" class="ui-dialog-closebutton" onclick="hideDialog()" href="javascript:;"></a>
+
+    </div>
+    <div class="ui-dialog-content">
+        <div class="ui-dialog-l40 ui-dialog-pt15">
+            <input id="username" class="ui-dialog-input ui-dialog-input-username" type="input" placeholder="手机/邮箱" value="" />
+        </div>
+        <div class="ui-dialog-l40 ui-dialog-pt15">
+            <input id="password" class="ui-dialog-input ui-dialog-input-password" type="password" placeholder="密码" value="" />
+        </div>
+        <div class="ui-dialog-l40">
+            <span id="warn">用户名或密码错误!</span><a href="PASSWORD.html" class="wjmm">忘记密码?</a>
+        </div>
+        <div>
+            <a id="ui-dialog-submit" class="ui-dialog-submit" href="javascript:;" >登录</a>
+        </div>
+        <div class="ui-dialog-l40">
+            <a href="REGISTER.html" class="ljzc">立即注册</a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+<script src="scripts/vision1.0.min.js"></script>
+<script src="scripts/script2019.min.js"></script>
+</body>
+</html>
