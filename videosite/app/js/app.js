@@ -3,14 +3,14 @@ jQuery(document).foundation();
 jQuery(document).ready(function(jQuery){
     "use strict";
     /*Layer slider trigger*/
-    jQuery("#layerslider").layerSlider({
+    /*jQuery("#layerslider").layerSlider({
         responsive: false,
         responsiveUnder: 1280,
         layersContainer: 1280,
         skin: 'noskin',
         hoverPrevNext: false,
         skinsPath: '../layerslider/skins/'
-    });
+    });*/
     //login register click
     jQuery(".loginReg").on("click", function(e){
         e.preventDefault();
@@ -135,7 +135,7 @@ jQuery(document).ready(function(jQuery){
         });
     }
     //newsTicker
-    jQuery('#newsBar').inewsticker({
+    /*jQuery('#newsBar').inewsticker({
         speed       : 2500,
         effect      : 'fade',
         dir         : 'ltr',
@@ -143,7 +143,7 @@ jQuery(document).ready(function(jQuery){
         color       : '#fff',
         font_family : 'arial',
         delay_after : 1000
-    });
+    });*/
 
     //show more and less
     jQuery('.showmore_one').showMore({

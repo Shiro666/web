@@ -62,7 +62,7 @@ function udata($data,$db)
     <div class="container_16 clearfix lo">
         <div class="grid_16 login_register">
             <span id="Aprf1"></span>
-            <span id="Aprf2"><a id="login_button" onclick="showDialog()" href="javascript:;">[登录]</a><a href="REGISTER.html">&nbsp;&nbsp;&nbsp;&nbsp;[注册]</a> </span>
+            <span id="Aprf2"><a id="login_button" onclick="showDialog()" href="javascript:;">[登录]</a><a href="../../html/REGISTER.html">&nbsp;&nbsp;&nbsp;&nbsp;[注册]</a> </span>
         </div>
         <div id="header" class="grid_16">
             <img src="../../html/images/banner.jpg">

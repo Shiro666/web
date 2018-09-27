@@ -110,8 +110,7 @@ p{
       color: #fff; }
 
 .secBg {
-  background: #fff;
-  border: 1px solid #ececec; }
+  background: #fff; }
 
 .thumb-border {
   border: 1px solid #ececec; }
@@ -2387,8 +2386,7 @@ footer {
     .singlePostDescription .heading h4 {
       display: inline-block; }
   .singlePostDescription .description p {
-    font-size: 13px;
-    margin-bottom: 30px; }
+    font-size: 13px; }
   .singlePostDescription .description ul {
     margin-left: 13px;
     list-style: none;

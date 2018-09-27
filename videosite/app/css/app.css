@@ -819,6 +819,7 @@ button {
 
 .row {
   max-width: 75rem;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto; }
   .row::before, .row::after {
@@ -831,13 +832,6 @@ button {
   .row.collapse > .column, .row.collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .row .row {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem; }
-    @media screen and (min-width: 40em) {
-      .row .row {
-        margin-left: -0.9375rem;
-        margin-right: -0.9375rem; } }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -846,6 +840,15 @@ button {
     .row.expanded .row {
       margin-left: auto;
       margin-right: auto; }
+
+.vedio-content {
+  margin-top: 30px;
+}
+
+.left-vedio-content {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
 
 .column, .columns {
   width: 100%;
@@ -1399,7 +1402,7 @@ button {
     float: left; } }
 @media screen and (min-width: 64.0625em) {
   .large-1 {
-    width: 8.3333333333%; }
+    width: 12%; }
 
   .large-push-1 {
     position: relative;
@@ -1539,7 +1542,7 @@ button {
     margin-left: 75%; }
 
   .large-11 {
-    width: 91.6666666667%; }
+    width: 88%; }
 
   .large-push-11 {
     position: relative;
@@ -2098,7 +2101,7 @@ kbd {
     float: none;
     top: -0.1em; }
 
-[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],
+/*[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],
 textarea {
   display: block;
   box-sizing: border-box;
@@ -2123,7 +2126,7 @@ textarea {
     outline: none;
     box-shadow: 0 0 5px #cacaca;
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
-
+*/
 textarea {
   max-width: 100%; }
   textarea[rows] {
@@ -3084,8 +3087,8 @@ body {
   height: 100%; }
 
 .off-canvas-wrapper {
-  width: 100%;
-  overflow-x: hidden;
+  margin: 0 auto;
+  width: 940px;
   position: relative;
   backface-visibility: hidden;
   -webkit-overflow-scrolling: auto; }

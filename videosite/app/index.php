@@ -36,7 +36,7 @@ $rank = udata($rank, $db);
                     {
                     ?>
 
-                    <div style="height:250px;" onclick="javascript:location.href='info.php?id=<?php echo $d['ID'];?>';" class="large-3 medium-6 columns">
+                    <div style="margin:0; height:250px;" onclick="javascript:location.href='info.php?id=<?php echo $d['ID'];?>';" class="large-3 medium-6 columns">
                         <figure class="premium-img">
                             <img style="height:150px;" src="../<?php echo $d['THUMB'];?>" alt="carousel">
                             <figcaption>

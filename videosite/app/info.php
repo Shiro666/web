@@ -66,9 +66,9 @@ if($_POST)
 
 
 
-                <div class="row">
+                <div class="row vedio-content">
                     <!-- left side content area -->
-                    <div class="large-8 columns">
+                    <div class="large-8 columns left-vedio-content">
                         <!--single inner video-->
                         <section class="inner-video">
                             <div class="row secBg">
@@ -226,23 +226,6 @@ if($_POST)
                     <div class="large-4 columns">
                         <aside class="secBg sidebar">
                             <div class="row">
-                                <!-- search Widget -->
-                                <div class="large-12 medium-7 medium-centered columns">
-                                    <div class="widgetBox">
-                                        <div class="widgetTitle">
-                                            <h5>搜索信息</h5>
-                                        </div>
-                                        <form id="searchform" action="infos.php" method="get" role="search">
-                                            <div class="input-group">
-                                                <input class="input-group-field" type="text" placeholder="Enter your keyword" name="key">
-                                                <div class="input-group-button">
-                                                    <input type="submit" class="button" value="Submit">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div><!-- End search Widget -->
-
                                 <!-- most view Widget -->
                                 <div class="large-12 medium-7 medium-centered columns">
                                     <div class="widgetBox">
