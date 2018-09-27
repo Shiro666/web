@@ -20,7 +20,6 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="../../html/scripts/vision1.0.min.js"></script>
-<script src="../../html/scripts/scripts1525.min.js"></script>
 <!-- LayerSlider script files -->
 <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
 <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
