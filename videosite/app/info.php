@@ -70,7 +70,7 @@ if($_POST)
                     <!-- left side content area -->
                     <div class="large-8 columns left-vedio-content">
                         <!--single inner video-->
-                        <section class="inner-video">
+                        <section class="inner-video1">
                             <div class="row secBg">
                                 <div class="large-12 columns inner-flex-video">
                                     <div class="flex-video widescreen">
