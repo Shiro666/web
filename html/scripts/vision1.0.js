@@ -167,19 +167,18 @@ $("#ui-dialog-submit").bind("click",function () {
             async:false,
             dataType:'json',   //如果以json形式传输加上声明，否则容易出现问题
             success:function(data){
-                if(data.status=='success'){
-                    //alert("success");
-                    $.cookie("nickname",data.nickname,{path:'/',expires:7});
-                    $.cookie("phone_number",data.phone_number,{path:'/',expires:7});
-                    $.cookie("email",data.email,{path:'/',expires:7});
-                    $.cookie("password",data.password,{path:'/',expires:7});
-                    $.cookie("user_id",data.user_id,{path:'/',expires:7});
+                if(data['0'].status=='success'){
+                    $.cookie("nickname",data['0'].nickname,{path:'/',expires:7});
+                    $.cookie("phone_number",data['0'].phone_number,{path:'/',expires:7});
+                    $.cookie("email",data['0'].email,{path:'/',expires:7});
+                    $.cookie("password",data['0'].password,{path:'/',expires:7});
+                    $.cookie("user_id",data['0'].user_id,{path:'/',expires:7});
                     $("#ui-dialog-closebutton").click();
                     location.reload(true);
                     $("#Aprf2").hide();
-                    $("#Aprf1").html('<a href="PERSONAL_INFO.html?user_id='+$.cookie('user_id')+'">['+data.nickname+']</a>'+'&nbsp;&nbsp;<a href="javascript:;" onclick="log_off()">[退出登录]</a> ').show();
+                    $("#Aprf1").html('<a href="PERSONAL_INFO.html?user_id='+$.cookie('user_id')+'">['+data['0'].nickname+']</a>'+'&nbsp;&nbsp;<a href="javascript:;" onclick="log_off()">[退出登录]</a> ').show();
                 }
-                if(data.status=='fail'){
+                if(data['0'].status=='fail'){
                     $("#warn").show();
                 }
             },
