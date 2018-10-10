@@ -83,6 +83,14 @@ function paste_to_editor(e) {
 
 }
 
+function checkWebp() {
+    try{
+        return (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0);
+    }catch(err) {
+        return  false;
+    }
+};
+var support=checkWebp();
 var url = decodeURI(window.location.href);
 var argsIndex = url.split("?post_id=");
 var post_id=argsIndex[1];
@@ -112,7 +120,8 @@ $.ajax({//主页不同栏目返回json的php模块不一样，但原理一样，
         //console.log(XMLHttpRequest.readyState);
         // 错误信息
         //console.log(textStatus);
-        alert("状态码："+XMLHttpRequest.status+" 状态："+XMLHttpRequest.readyState+" 错误信息："+textStatus);
+        //alert("状态码："+XMLHttpRequest.status+" 状态："+XMLHttpRequest.readyState+" 错误信息："+textStatus);
+        alert("抱歉，该帖子出错了！");
     }
 });
 
