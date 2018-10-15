@@ -83,9 +83,9 @@ $rank = udata($rank, $db);
 
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">All Videos : <span>
+                            <p class="pull-left">全部视频 : <span>共
                                     <?php echo count($d['list']); ?>
-                                    Videos posted</span></p>
+                                    个视频</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button current grid-default" href="#"><i class="fa fa-th"></i></a>
                             </div>
@@ -154,7 +154,7 @@ $rank = udata($rank, $db);
 
                         </div>
                         <div class="text-center row-btn">
-                            <a class="button radius" href="infos.php?id=<?php echo $d['ID'];?>">View All</a>
+                            <a class="button radius" href="infos.php?id=<?php echo $d['ID'];?>">查看全部</a>
                         </div>
                     </div>
                 </div>
