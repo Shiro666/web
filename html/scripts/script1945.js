@@ -183,7 +183,10 @@ switch (case_type){
         $("#case_type").text("当前位置：微信诈骗");
         $("title").html("微信诈骗-诈骗信息发布网站");
         break;
-
+    case '9':
+        $("#case_type").text("当前位置：金融诈骗");
+        $("title").html("金融诈骗-诈骗信息发布网站");
+        break;
 };
 
 //var case_type=$("#case_type").text().substr(0);
