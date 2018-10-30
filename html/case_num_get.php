@@ -1,8 +1,8 @@
 <?php
 //$userInfo = $_POST;
-//case_num_get.phpÄ£¿é£¬¸ù¾Ý°¸ÀýÀàÐÍ£¬´«µÝ°¸ÀýÊýÁ¿,'case_type'ÓÃ¡®1¡¯¡®2¡¯¡®3¡¯¡®4¡¯...±íÊ¾
+//case_num_get.phpÄ£ï¿½é£¬ï¿½ï¿½ï¿½Ý°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Ý°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,'case_type'ï¿½Ã¡ï¿½1ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½...ï¿½ï¿½Ê¾
 //$case_type=$_POST['case_type'];
-//¸ù¾Ýcase_type²éÑ¯¶ÔÓ¦°¸Àý×ÜÊý
+//ï¿½ï¿½ï¿½ï¿½case_typeï¿½ï¿½Ñ¯ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //$arr=array('total_num'=>'18');
 //echo json_encode($arr);
 
@@ -15,7 +15,7 @@ include("connectDB.php");
 	$arr=array();
 	
 	switch($case_type){
-	case '1':              //²éÑ¯alipayÖ§¸¶±¦ÊýÁ¿
+	case '1':              //ï¿½ï¿½Ñ¯alipayÖ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM alipay ";
 	$result=$db->query($sql);
@@ -24,7 +24,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '2':              //²éÑ¯businessÉÌÒµÊýÁ¿
+	case '2':              //ï¿½ï¿½Ñ¯businessï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM business ";
 	$result=$db->query($sql);
@@ -33,7 +33,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '3':              //²éÑ¯mobilebankingÊýÁ¿
+	case '3':              //ï¿½ï¿½Ñ¯mobilebankingï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM mobilebanking ";
 	$result=$db->query($sql);
@@ -42,7 +42,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '4':              //²éÑ¯network
+	case '4':              //ï¿½ï¿½Ñ¯network
 	
     $sql="SELECT * FROM network ";
 	$result=$db->query($sql);
@@ -51,7 +51,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '5':              //²éÑ¯onlineshoppingÊýÁ¿
+	case '5':              //ï¿½ï¿½Ñ¯onlineshoppingï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM onlineshopping ";
 	$result=$db->query($sql);
@@ -60,7 +60,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '6':              //²éÑ¯societyÊýÁ¿
+	case '6':              //ï¿½ï¿½Ñ¯societyï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM society ";
 	$result=$db->query($sql);
@@ -69,7 +69,7 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '7':              //²éÑ¯telecomÊýÁ¿
+	case '7':              //ï¿½ï¿½Ñ¯telecomï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM telecom ";
 	$result=$db->query($sql);
@@ -78,9 +78,18 @@ include("connectDB.php");
 	echo json_encode($arr);
 	break;
 	
-	case '8':              //²éÑ¯wechatÊýÁ¿
+	case '8':              //ï¿½ï¿½Ñ¯wechatï¿½ï¿½ï¿½ï¿½
 	
     $sql="SELECT * FROM wechat ";
+	$result=$db->query($sql);
+	$rowcount=mysqli_num_rows($result);
+	$arr=array('total_num'=>$rowcount);
+	echo json_encode($arr);
+	break;
+
+	case '9':              //ï¿½ï¿½Ñ¯wechatï¿½ï¿½ï¿½ï¿½
+	
+    $sql="SELECT * FROM finance ";
 	$result=$db->query($sql);
 	$rowcount=mysqli_num_rows($result);
 	$arr=array('total_num'=>$rowcount);

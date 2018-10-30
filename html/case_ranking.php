@@ -1,8 +1,8 @@
 <?php
 
-//case_hot_get.phpÄ£¿é£¬¸ù¾ÝÀàÐÍ£¬¾ö¶¨ÏÔÊ¾ÄÄÐ©°¸ÀýÅÅÐÐÐÅÏ¢
+//case_hot_get.phpÄ£ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
-//$arr=array(array('rank'=>'1','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_1'),array('rank'=>'2','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_2'),array('rank'=>'3','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_3'),array('rank'=>'4','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_4'),array('rank'=>'5','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_5'),array('rank'=>'6','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_6'),array('rank'=>'7','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_7'),array('rank'=>'8','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_8'),array('rank'=>'9','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_9'),array('rank'=>'10','title'=>mb_convert_encoding("ÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâÕâÊÇÎÄÕÂµÄ±êÌâ",'UTF-8','GB2312'),'case_id'=>'exp_10'));
+//$arr=array(array('rank'=>'1','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_1'),array('rank'=>'2','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_2'),array('rank'=>'3','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_3'),array('rank'=>'4','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_4'),array('rank'=>'5','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_5'),array('rank'=>'6','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_6'),array('rank'=>'7','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_7'),array('rank'=>'8','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_8'),array('rank'=>'9','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_9'),array('rank'=>'10','title'=>mb_convert_encoding("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½",'UTF-8','GB2312'),'case_id'=>'exp_10'));
 //echo json_encode($arr);
 
 include("connectDB.php");
@@ -15,7 +15,7 @@ include("connectDB.php");
 	
 	switch($posttype){
 		
-	case '1':              //²éÑ¯alipayÖ§¸¶±¦×îÈÈ
+	case '1':              //ï¿½ï¿½Ñ¯alipayÖ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from alipay order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -25,7 +25,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '2':              //²éÑ¯business×îÈÈ
+	case '2':              //ï¿½ï¿½Ñ¯businessï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from business order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -35,7 +35,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '3':              //²éÑ¯mobilebanking×îÈÈ
+	case '3':              //ï¿½ï¿½Ñ¯mobilebankingï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from mobilebanking order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -45,7 +45,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '4':              //²éÑ¯network×îÈÈ
+	case '4':              //ï¿½ï¿½Ñ¯networkï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from network order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -55,7 +55,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '5':              //²éÑ¯onlineshopping×îÈÈ
+	case '5':              //ï¿½ï¿½Ñ¯onlineshoppingï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from onlineshopping order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -65,7 +65,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '6':              //²éÑ¯society×îÈÈ
+	case '6':              //ï¿½ï¿½Ñ¯societyï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from society order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -75,7 +75,7 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '7':              //²éÑ¯telecom×îÈÈ
+	case '7':              //ï¿½ï¿½Ñ¯telecomï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from telecom order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
@@ -85,9 +85,19 @@ include("connectDB.php");
 	echo json_encode($output);
 	break;
 	
-	case '8':              //²éÑ¯wechat×îÈÈ
+	case '8':              //ï¿½ï¿½Ñ¯wechatï¿½ï¿½ï¿½ï¿½
 	
     $sql="select title,case_id from wechat order by viewers desc limit 10";
+    $query=mysqli_query($db,$sql);
+    while($result=mysqli_fetch_assoc($query)){
+        $output[]=$result; }
+		
+	echo json_encode($output);
+    break;
+    
+    case '9':              //finance
+	
+    $sql="select title,case_id from finance order by viewers desc limit 10";
     $query=mysqli_query($db,$sql);
     while($result=mysqli_fetch_assoc($query)){
         $output[]=$result; }

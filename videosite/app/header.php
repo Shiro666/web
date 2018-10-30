@@ -86,6 +86,8 @@ function udata($data,$db)
                     <li class="mid">|</li>
                     <li class="nav_content"><a href="../../html/ANLI_LIST.html?case_type=8">微信诈骗</a></li>
                     <li class="mid">|</li>
+                    <li class="nav_content"><a href="../../html/ANLI_LIST.html?case_type=9">金融诈骗</a></li>
+                    <li class="mid">|</li>
                     <li class="nav_content"><a href="../../html/BBS.html?post_type=0">网页论坛</a></li>
                     <li class="mid">|</li>
                     <li class="nav_content"><a href="index.php">视频天地</a></li>
