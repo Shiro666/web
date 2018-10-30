@@ -48,7 +48,37 @@ $.ajax({
         alert("状态码："+XMLHttpRequest.status+" 状态："+XMLHttpRequest.readyState+" 错误信息："+textStatus);
     }
 });
-var case_type='1';//1代表电信诈骗
+var case_type='';
+var aa=case_id[0];
+switch(aa) {
+    case 'a':
+        case_type = '1';
+        break;
+    case 'b':
+        case_type = '2';
+        break;
+    case 'f':
+        case_type = '9';
+        break;
+    case 'm':
+        case_type = '3';
+        break;
+    case 'n':
+        case_type = '4';
+        break;
+    case 'o':
+        case_type = '5';
+        break;
+    case 's':
+        case_type = '6';
+        break;
+    case 't':
+        case_type = '7';
+        break;
+    case 'w':
+        case_type = '8';
+        break;
+};
 $.ajax({
     type:'POST',  //POST,GET必须大写
     data:{'case_type':case_type},
