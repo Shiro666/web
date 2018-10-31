@@ -36,7 +36,7 @@ $.ajax({
         var str="";
         str+='发布时间：'+data.date+'&nbsp;|&nbsp;浏览：'+data.viewers;
         $("#p_anli_c_2").html(str);
-        $("#title").html("当前位置：电信诈骗>>"+data.title);
+        $("#title2").html(data.title);
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
         // 状态码
@@ -53,30 +53,39 @@ var aa=case_id[0];
 switch(aa) {
     case 'a':
         case_type = '1';
+        $("#title1").html("当前位置：支付宝诈骗>>");
         break;
     case 'b':
         case_type = '2';
+        $("#title1").html("当前位置：商业诈骗>>");
         break;
     case 'f':
         case_type = '9';
+        $("#title1").html("当前位置：金融诈骗>>");
         break;
     case 'm':
         case_type = '3';
+        $("#title1").html("当前位置：手机银行诈骗>>");
         break;
     case 'n':
         case_type = '4';
+        $("#title1").html("当前位置：网络诈骗>>");
         break;
     case 'o':
         case_type = '5';
+        $("#title1").html("当前位置：网购诈骗>>");
         break;
     case 's':
         case_type = '6';
+        $("#title1").html("当前位置：社会诈骗>>");
         break;
     case 't':
         case_type = '7';
+        $("#title1").html("当前位置：电信诈骗>>");
         break;
     case 'w':
         case_type = '8';
+        $("#title1").html("当前位置：微信诈骗>>");
         break;
 };
 $.ajax({
