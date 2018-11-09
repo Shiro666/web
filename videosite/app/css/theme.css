@@ -925,6 +925,9 @@ input[type=checkbox]:checked + .customLabel:before {
       transform: scale(1); }
     #premium .owl-carousel .item:hover figcaption {
       transform: translateY(70px); }
+.vedio-title {
+  width: 200px;
+}
 
 /* ==========================================================================
 	5- Category
@@ -1003,7 +1006,6 @@ input[type=checkbox]:checked + .customLabel:before {
   height: 190px;
   overflow: hidden; }
   .content .post .post-thumb img {
-    width: 100%;
     height: 100%;
     object-fit: cover; }
   .content .post .post-thumb .video-stats {

@@ -36,11 +36,11 @@ $rank = udata($rank, $db);
                     {
                     ?>
 
-                    <div style="margin:0; height:250px;" onclick="javascript:location.href='info.php?id=<?php echo $d['ID'];?>';" class="large-3 medium-6 columns">
+                    <div style="width:235px; margin:0; height:250px;" onclick="javascript:location.href='info.php?id=<?php echo $d['ID'];?>';" class="large-3 medium-6 columns">
                         <figure class="premium-img">
                             <img style="height:150px;" src="../<?php echo $d['THUMB'];?>" alt="carousel">
                             <figcaption>
-                                <h5><?php echo $d['TITLE'];?></h5>
+                                <h5 class="vedio-title"><?php echo $d['TITLE'];?></h5>
                                 <p><?php echo $d['CATEGORY'];?></p>
                             </figcaption>
                         </figure>
@@ -101,7 +101,7 @@ $rank = udata($rank, $db);
                                     {
                                     ?>
 
-                                    <div class="item large-3 medium-6 columns group-item-grid-default">
+                                    <div style="width:225px;" class="item large-3 medium-6 columns group-item-grid-default">
                                         <div class="post thumb-border">
                                             <div class="post-thumb">
                                                 <img src="../<?php echo $d1['THUMB'];?>" >
