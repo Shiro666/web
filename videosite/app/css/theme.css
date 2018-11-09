@@ -1613,7 +1613,6 @@ footer {
       background: #fff; }
       .sidebar .widgetBox .widgetContent .video-box .video-img-thumb {
         border-bottom: 1px solid #ececec;
-        height: 190px;
         position: relative; }
         .sidebar .widgetBox .widgetContent .video-box .video-img-thumb img {
           width: 100%;
